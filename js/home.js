@@ -48,3 +48,10 @@ const createTable = (allCryptoData) => {
     </table>`;
   cryptoDataDiv.innerHTML = html_markup;
 };
+
+const menuBtn = document.getElementById('menu');
+const nav = document.querySelector('.nav');
+menuBtn.addEventListener('click', () => {
+  console.log('clicked');
+  nav.classList.toggle('open');
+});
