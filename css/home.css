@@ -3,9 +3,9 @@
   --accent-color: #9933ff;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* Vertical Nav CSS  */
@@ -24,25 +24,36 @@ body{
   margin-left: -15rem;
 }
 
-.nav-link{
-    text-transform: capitalize;
+.nav-link {
+  text-transform: capitalize;
 }
 
-.nav-link:hover{
-    background:#f3f2f2;
+.nav-link:hover {
+  background: #f3f2f2;
 }
 
-.text-primary{
-    color: var(--accent-color) !important;
+.text-primary {
+  color: var(--accent-color) !important;
 }
 
-.body{
-    margin-left: 20rem;
-    margin-top: 3rem;
+.body {
+  margin-left: 20rem;
+  margin-top: 3rem;
 }
 
-.crypto-graph{
-    margin-left: 20rem;
-    height: 500px;
-    width: 1000px;
+.crypto-graph {
+  margin-left: 20rem;
+  height: 500px;
+  width: 1000px;
+}
+
+.table {
+  width: 100%;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-nav {
+    left: -15em;
+  }
 }
