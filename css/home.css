@@ -8,20 +8,13 @@ body {
   padding: 0;
 }
 
-/* Vertical Nav CSS  */
 .vertical-nav {
-  min-width: 15rem;
-  width: 15rem;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
-}
-
-#sidebar.active {
-  margin-left: -15rem;
 }
 
 .nav-link {
@@ -36,24 +29,19 @@ body {
   color: var(--accent-color) !important;
 }
 
-.body {
-  margin-left: 20rem;
-  margin-top: 3rem;
-}
-
-.crypto-graph {
-  margin-left: 20rem;
-  height: 500px;
-  width: 1000px;
-}
-
 .table {
-  width: 100%;
+  max-width: 100% !important;
   overflow: scroll;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
-  .vertical-nav {
+  /* .vertical-nav {
     left: -15em;
-  }
+  } */
 }

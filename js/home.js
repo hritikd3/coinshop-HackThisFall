@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  const url = 'https://api.coinlore.net/api/tickers/';
+  const url = 'https://api.coinlore.net/api/tickers/?start=0&limit=10';
   fetch(url)
     .then((res) => res.json())
     .then((result) => {
@@ -15,7 +15,8 @@ const createTable = (allCryptoData) => {
     <tr>
         <th scope="col">#</th>
         <th scope="col">Name</th>
-        <th scope="col">Price</th>
+        <th scope="col">Symbol</th>
+        <th scope="col">NameId</th>
         <th scope="col">MKT CAP</th>
         <th scope="col">Change (24hrs)</th>
         <th scope="col">Change (1hr)</th>
@@ -31,6 +32,7 @@ const createTable = (allCryptoData) => {
             <tr>
                 <th scope="row">${crypto.rank}</th>
                 <td>${crypto.name}</td>
+                <td>${crypto.symbol}</td>
                 <td>${crypto.nameid}</td>
                 <td>${crypto.price_usd}</td>
                 <td>${crypto.market_cap_usd}</td>
