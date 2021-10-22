@@ -3,48 +3,96 @@
   --accent-color: #9933ff;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Vertical Nav CSS  */
+/* 
+  .col-md-3 {
+    border: 2px solid yellow;
+  }
+  
+  .col-md-9 {
+    border: 2px solid yellow;
+  } */
+
+.aside {
+  position: relative;
+}
+
+.main {
+  padding: 1em 2em;
+}
+
 .vertical-nav {
-  min-width: 15rem;
-  width: 15rem;
+  width: 100%;
   height: 100vh;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
+  bottom: 0;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
 }
 
-#sidebar.active {
-  margin-left: -15rem;
+.nav-link {
+  text-transform: capitalize;
 }
 
-.nav-link{
-    text-transform: capitalize;
+.nav-link:hover {
+  background: #f3f2f2;
 }
 
-.nav-link:hover{
-    background:#f3f2f2;
+.text-primary {
+  color: var(--accent-color) !important;
 }
 
-.text-primary{
-    color: var(--accent-color) !important;
+.menu {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 30px;
+  height: 20px;
+  z-index: 100;
 }
 
-.content{
-    margin-left: 16rem;
+.bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #111;
 }
 
-/* Assets CSS  */
-.content table{
-    text-align: center;
+.table {
+  width: 100%;
+  max-width: 600px !important;
+  overflow-x: scroll;
+  text-align: center;
 }
 
-button:active{
-    transform: scale(0.9);
+iframe {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-nav {
+    height: auto;
+  }
+  .vertical-nav ul {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .img-thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+  .open {
+    display: flex !important;
+  }
 }
