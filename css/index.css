@@ -1,0 +1,74 @@
+:root{
+    --background-color: #fcfcfc;
+    --accent-color: #9933FF; 
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background-color);
+}
+
+
+/* Logo css  */
+.navbar-brand{
+    font-weight: 700;
+}
+
+.bg-purple{
+    background-color: var(--accent-color);
+}
+
+.btn{
+    margin: 10px;
+    border: 0px !important;
+    border-radius: 7px !important;
+}
+
+
+/* hero figure css  */
+.hero-figure .row .col-md-6{
+    margin: auto;
+}
+
+.hero-figure img{
+    height: 350px;
+}
+
+.startBtn{
+    background-color: var(--accent-color)!important;
+}
+
+/* footer css  */
+footer {
+    background: var(--accent-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 2rem 1rem 0.1rem 1rem;
+    color: white;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    display: inline;
+}
+
+footer p a {
+    text-decoration: none;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    transition: all 0.5s;
+}
+
+footer p a:hover{
+    background: white;
+    color: #116dfa;
+}
