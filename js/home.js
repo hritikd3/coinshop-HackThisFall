@@ -52,6 +52,5 @@ const createTable = (allCryptoData) => {
 const menuBtn = document.getElementById('menu');
 const nav = document.querySelector('.nav');
 menuBtn.addEventListener('click', () => {
-  console.log('clicked');
   nav.classList.toggle('open');
 });
